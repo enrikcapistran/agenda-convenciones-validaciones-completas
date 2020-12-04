@@ -14,3 +14,6 @@ Por último en la ruta del proyecto:
   
   nodemon
   
+  Para correr el servidor con el siguiente comando:
+  
+  npm start
