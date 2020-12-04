@@ -1,0 +1,57 @@
+5<style> .cancelar{float:left;} </style>
+<style> .guardar{float:right; margin-right: 5px;} </style>
+<style> .datos{float:right; margin-right: 5px;} </style>
+<style> input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+</style>
+
+<h4>Coppel Convenciones Snapshot06w.14 - Por: EALC01 - Geeklopers</h4>
+<br>
+<form action="/personas" method="POST" autocomplete="off">
+    <input required type="hidden" name="_id" value="{{persona._id}}">
+    <div class="form-row">
+      <div class="form-group col-4">
+          <label>Nombre(s)*</label>
+          <input required pattern = "^([a-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿA-ZáéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇüñÜ,Ñ' '\\s])+$" style="text-transform: capitalize;" type="text" class="form-control" name="nombre" placeholder="" value="{{persona.nombre}}">
+          <div class="text-danger">
+              {{persona.nombreError}}</div>
+      </div>
+      <div class="form-group col-4">
+          <label>Apellido Paterno*</label>
+          <input required pattern = "^([a-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿA-ZáéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇüñÜ,Ñ' '\\s])+$" style="text-transform: capitalize;" class="form-control" name="apellidoPat" placeholder="" value="{{persona.apellidoPat}}">
+          <div class="text-danger">
+              {{persona.apellidoPatError}}</div>
+      </div>
+      <div class="form-group col-4">
+          <label>Apellido Materno</label>
+          <input pattern = "^([a-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿA-ZáéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇüñÜ,Ñ' '\\s])+$" style="text-transform: capitalize;" type="text" class="form-control" name="apellidoMat" placeholder="" value="{{persona.apellidoMat}}">
+          <div class="text-danger">
+              {{persona.apellidoMatError}}</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label>Email*</label>
+        <input required type="text" class="form-control" name="email" placeholder="" value="{{persona.email}}">
+        <div class="text-danger">
+            {{persona.emailError}}</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Teléfono*</label>
+            <input required  type="number" style="-moz-appearance: textfield" class="form-control" class="tel" name="tel" placeholder="" value="{{persona.tel}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Ciudad</label>
+            <input pattern = "^([a-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿA-ZáéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇüñÜ,Ñ' '\\s])+$" style="text-transform: capitalize;" type="text" class="form-control" name="ciudad" placeholder="" value="{{persona.ciudad}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="button" onclick="history.back()" class="btn btn-secondary cancelar"><i class="fa fa-arrow-left"></i> Regresar</button>
+        <button type="submit" class="btn btn-info guardar"><i class="fa fa-database"></i> Actualizar</button>
+    </div>
+</form>

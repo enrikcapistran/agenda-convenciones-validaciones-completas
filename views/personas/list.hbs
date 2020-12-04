@@ -1,0 +1,32 @@
+<style>.agregar {float: right}</style>
+<style>.agregar {margin-bottom: 8px;}</style>
+<h3><a class="agregar btn btn-primary" href="/personas"><i class="fa fa-plus"></i> Agregar</a> Coppel Convenciones Snapshot06w.14 - Por: EALC01 - Geeklopers</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Ciudad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.nombre}}</td>
+            <td>{{this.apellidoPat}}</td>
+            <td>{{this.apellidoMat}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.tel}}</td>
+            <td>{{this.ciudad}}</td>
+            <td>
+                <a href="/personas/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/personas/delete/{{this._id}}" onclick="return confirm('¿Deseas eliminar esta persona? ');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
