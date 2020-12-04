@@ -13,3 +13,4 @@ Por último en la ruta del proyecto:
   npm i express mongoose body-parser --save
   
   nodemon
+  
