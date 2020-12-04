@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Agenda Personal</title>
+  </head>
+  <body>
+
+    <div class="col-12">
+      <div class="container-fluid">
+        <h1>Agenda Personal</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Agenda</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Por Nombre <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Por Apellido Paterno</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Por Apellido Materno</a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>
+                  ID
+                </th>
+                <th>
+                  Nombre
+                </th>
+                <th>
+                  Apellido Paterno
+                </th>
+                <th>
+                  Apellido Materno
+                </th>
+                <th>
+                  Teléfono
+                </th>
+                <th>
+                  Correo
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody<>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="container-fluid">
+        <form action="/add" method="POST" >
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nombre(s)</label>
+            <input name="nombre" type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Apellido Paterno</label>
+            <input name="apellidoPat" type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Apellido Materno</label>
+            <input name="apellidoMat" type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Teléfono</label>
+            <input name="tel" type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Correo Electrónico</label>
+            <input name="correo" type="text" class="form-control" placeholder="">
+          </div>
+          <button  type="submit" value="Submit" class="btn btn-dark">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
