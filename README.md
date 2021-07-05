@@ -46,9 +46,7 @@ Este proyecto es un CRUD para las personas asistentes de las convenciones de la 
 
 - Validaciones.
 
-<img width="750" alt="" src="https://user-images.githubusercontent.com/10008363/124519622-16feb400-dda7-11eb-8690-1b3162216d5e.png)">
-
-
+<img width="750" alt="" src="https://user-images.githubusercontent.com/10008363/124519622-16feb400-dda7-11eb-8690-1b3162216d5e.png">
 
 
 
