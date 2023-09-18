@@ -1,4 +1,6 @@
-# **Agenda Personal - MEAN Stack - Validaciónes Completas**
+# **Agenda Convenciones - MEAN Stack - Validaciónes Completas**
+
+## NOTA: Proyecto de mi antigua cuenta de Github: https://github.com/enriquelpzcapistran
 
 Este proyecto es un CRUD para las personas asistentes de las convenciones de la empresa Coppel a nivel nacional enfocado hacia una agenda personal dinámica con la biblioteca de Bootstrap y  el uso a la creación y formateo de codigo HTML con Handlebarsjs.
 
